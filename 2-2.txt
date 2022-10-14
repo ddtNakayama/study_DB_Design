@@ -1,0 +1,24 @@
+・Linux
+	コマンド：dmidecode
+	※要root権限
+	
+	※CPUの情報は「cat /proc/cpuinfo」でも可能
+	※メモリの情報は「cat /proc/meminfo」でも可能
+	※PCIデバイスは「lspci」でも可能
+	※HDD/USBデバイスは「lsblk」でも可能
+
+・MacOS
+	コマンド：system_profiler SPHardwareDataType
+
+・Windows
+	※ファイル名を指定して実行→「msinfo32」「dxdiag」からも確認可能
+	
+	①CPU
+		wmic CPU get Name
+	
+	②メモリ
+		wmic memorychip list full
+	
+	③HDD
+		wmic diskdrive list full
+	
